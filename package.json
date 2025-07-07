@@ -1,0 +1,21 @@
+{
+  "name": "yunzhoucli",
+  "private": false,
+  "version": "0.0.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "llist": "lerna list",
+    "lpublish": "lerna publish --registry http://localhost:4873",
+    "link": "lerna bootstrap --scope 'package-*'"
+  },
+  "dependencies": {
+    "@yunzhoudai/yztask": "workspace:*",
+    "@yunzhoudai/yzutil": "workspace:*"
+  },
+  "devDependencies": {
+    "lerna": "^8.1.2"
+  }
+}

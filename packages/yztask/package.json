@@ -1,0 +1,23 @@
+{
+  "name": "@yunzhoudai/yztask",
+  "version": "0.0.11",
+  "description": "> TODO: description",
+  "author": "daiyunzhou <daiyunz@chanjet.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/yztask.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry-npm.rd.chanjet.com/"
+  },
+  "scripts": {
+    "test": "node ./__tests__/yztask.test.js",
+    "build": "node ./lib/yztask"
+  }
+}

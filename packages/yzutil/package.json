@@ -1,0 +1,23 @@
+{
+  "name": "@yunzhoudai/yzutil",
+  "version": "0.0.2",
+  "description": "> TODO: description",
+  "author": "daiyunzhou <daiyunz@chanjet.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/yzutil.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry-npm.rd.chanjet.com/"
+  },
+  "scripts": {
+    "test": "node ./__tests__/yzutil.test.js",
+    "build": "node ./lib/yzutil"
+  }
+}
