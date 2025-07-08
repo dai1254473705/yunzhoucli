@@ -1,0 +1,13 @@
+{
+  "name": "@yunzhou/util",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/util/index.js", 
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.4",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

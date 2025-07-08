@@ -1,0 +1,16 @@
+{
+  "name": "@yunzhou/shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/shared/index.js", 
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.4",
+  "dependencies": {
+    "@yunzhou/util": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

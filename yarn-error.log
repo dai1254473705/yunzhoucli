@@ -1,0 +1,56 @@
+Arguments: 
+  /Users/daiyunzhou/.nvm/versions/node/v18.16.1/bin/node /usr/local/bin/yarn publish
+
+PATH: 
+  /opt/homebrew/Cellar/pyenv-virtualenv/1.2.4/shims:/Users/daiyunzhou/.pyenv/shims:/Users/daiyunzhou/.pyenv/bin:/Users/daiyunzhou/.nvm/versions/node/v18.16.1/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/Applications/Yunshu.app/Contents/Public:/Applications/Brizoo.app/Contents/Public:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/daiyunzhou/.cargo/bin:/Applications/iTerm.app/Contents/Resources/utilities
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  18.16.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:136216:13)
+      at Interface.emit (node:events:513:28)
+      at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1131:18)
+      at ReadStream.onkeypress (node:internal/readline/interface:270:20)
+      at ReadStream.emit (node:events:513:28)
+      at emitKeys (node:internal/readline/utils:357:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:64:36)
+      at ReadStream.emit (node:events:513:28)
+      at addChunk (node:internal/streams/readable:324:12)
+
+npm manifest: 
+  {
+    "name": "yunzhou",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "sh ./scripts/build.sh",
+      "publish": "sh ./scripts/publish.sh"
+    },
+    "workspaces": [
+      "packages/*"
+    ],
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "packageManager": "pnpm@10.12.4",
+    "dependencies": {},
+    "devDependencies": {
+      "lerna": "^8.1.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

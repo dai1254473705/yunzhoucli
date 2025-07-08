@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "esnext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "skipLibCheck": true, // 跳过检查第三方库类型，加快编译速度
+    "resolveJsonModule": true,
+    "composite": true,
+    "lib": ["ES2018", "DOM"],
+    "outDir": "./dist",         // 统一输出目录
+    "tsBuildInfoFile": "./.tsbuildinfo",  // 默认路径（会被子包覆盖）
+    "paths": {
+      "@yunzhou/util": ["packages/util/src"],
+      "@yunzhou/shared": ["packages/shared/src"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "packages/**/node_modules",
+    "dist",
+    "packages/**/dist",
+    "**/__tests__/**/*",
+    "**/*.md",
+    ".husky"
+  ]
+}

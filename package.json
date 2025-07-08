@@ -1,20 +1,20 @@
 {
-  "name": "yunzhoucli",
-  "private": false,
-  "version": "0.0.1",
+  "name": "yunzhou",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sh ./scripts/build.sh",
+    "publish": "sh ./scripts/publish.sh"
+  },
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {
-    "build": "lerna run build",
-    "llist": "lerna list",
-    "lpublish": "lerna publish --registry http://localhost:4873",
-    "link": "lerna bootstrap --scope 'package-*'"
-  },
-  "dependencies": {
-    "@yunzhoudai/yztask": "workspace:*",
-    "@yunzhoudai/yzutil": "workspace:*"
-  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.4",
+  "dependencies": {},
   "devDependencies": {
     "lerna": "^8.1.2"
   }

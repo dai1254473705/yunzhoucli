@@ -1,0 +1,18 @@
+// {
+//   "extends": "../../tsconfig.base.json",
+//   "compilerOptions": {
+//     "module": "CommonJS",
+//     "declaration": false,
+//     "composite": false
+//   }
+// }
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../dist/util",  // 输出到根目录 dist 下的对应包目录
+    "rootDir": "./src",
+    "tsBuildInfoFile": "../../dist/util/.tsbuildinfo" // 独立的构建信息文件
+  },
+  "include": ["src/**/*.ts"],
+  "references": []  // util 不依赖其他包
+}

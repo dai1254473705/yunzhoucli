@@ -1,0 +1,20 @@
+// {
+//   "extends": "../../tsconfig.base.json",
+//   "compilerOptions": {
+//     "module": "ESNext",
+//     "declaration": true,
+//     "composite": true
+//   }
+// }
+
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../dist/shared",
+    "rootDir": "./src",
+    "tsBuildInfoFile": "../../dist/shared/.tsbuildinfo" // 独立的构建信息文件
+  },
+  "references": [
+    { "path": "../util" } // 声明依赖 util 包
+  ]
+}
